@@ -1,0 +1,6 @@
+/diag_demo_wit_node_1:
+  ros__parameters:
+    warn_threshold: 3
+    error_threshold: 6
+    update_period: 500.0
+    diag_name: status_diag_1

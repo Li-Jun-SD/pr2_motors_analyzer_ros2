@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="pr2_motors_analyzer" exec="pr2_power_pub.py" name="diag_pub" />
+    
+  <group>
+    <node pkg="diagnostic_aggregator" exec="aggregator_node" name="aggregator_node" output="screen" args="--ros-args --log-level WARN">
+      <param from="$(find-pkg-share pr2_motors_analyzer)/config/tst.param.yaml" />
+    </node>
+  </group>
+</launch>

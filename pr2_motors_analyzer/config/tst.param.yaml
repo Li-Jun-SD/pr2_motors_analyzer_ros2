@@ -1,0 +1,21 @@
+/**:
+  ros__parameters:
+    path: MyDemo
+    pub_rate: 0.1
+    other_as_errors: false
+    # history_depth: 1
+    analyzers:
+      diag_demo_wit:
+        type: diagnostic_aggregator/AnalyzerGroup
+        path: diag_demo_wit 
+        analyzers:
+          status_diag_1:
+            type: diagnostic_aggregator/GenericAnalyzer
+            path: status_diag_1
+            contains: [": status_diag_1"]
+            timeout: 1.0
+          status_diag_2:
+            type: diagnostic_aggregator/PR2MotorsAnalyzer
+            path: status_diag_2
+            contains: [": status_diag_2"]
+            timeout: 1.0

@@ -1,0 +1,7 @@
+<library path="pr2_motors_analyzer">
+  <class name="diagnostic_aggregator/PR2MotorsAnalyzer" type="diagnostic_aggregator::PR2MotorsAnalyzer" base_class_type="diagnostic_aggregator::Analyzer">
+    <description>
+      PR2MotorsAnalyzer is default PR2 diagnostic analyzer.
+    </description>
+  </class>
+</library>

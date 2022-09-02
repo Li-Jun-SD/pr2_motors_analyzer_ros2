@@ -1,0 +1,6 @@
+/**:
+  ros_parameters:
+    analyzers:
+      motors:
+        type: diagnostic_aggregator/GenericAnalyzer
+        path: motor 
